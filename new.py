@@ -5,4 +5,4 @@ if score>=80:
 elif score>=60:
 	print u'凑合吧'
 else:
-	print u'不及格啊'11jjj
+	print u'不及格啊'11jjjdadadada
