@@ -37,4 +37,4 @@ print len(d)
 aa={'aaa':11,'bbb':22,'ccc':33}
 print aa['aaa']
 print aa.get('aaa')
-#key不能使可变的，所以不能用list做key
+#key不能使可变的，所以不能用list做key111
