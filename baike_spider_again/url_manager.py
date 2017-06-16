@@ -1,4 +1,4 @@
-class UrlManager(object):
+class Manager(object):
     def __init__(self):
         self.new_urls = set()
         self.old_urls = set()
@@ -8,14 +8,16 @@ class UrlManager(object):
             return
         if url not in self.new_urls and url not in self.old_urls:
             self.new_urls.add(url)
-        return
-
-
-
-    def add_new_urls(self,urls):
-        if urls is None or len(urls)==0:
             return
-        for url in urls:
+        else:
+            pass
+
+
+
+    def add_new_urls(self, new_urls):
+        if new_urls is None or len(new_urls) ==0:
+            return
+        for url in new_urls:
             self.add_new_url(url)
         return
 
@@ -23,8 +25,6 @@ class UrlManager(object):
         return len(self.new_urls) != 0
 
     def get_new_url(self):
-        new_url = self.new_urls.pop()
-        print self.new_urls
-        self.old_urls.add(new_url)
-        return new_url
-
+        url = self.new_urls.pop()
+        self.old_urls.add(url)
+        return url

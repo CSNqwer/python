@@ -17,13 +17,11 @@ class HtmlParser(object):
 
         new_urls = set()
         links = soup.find_all('a',href = re.compile(r"/item/%"))
-        print links
         for link in links:
             new_url = link['href']
-            print new_url
             new_full_url = urlparse.urljoin(url,new_url)
             new_urls.add(new_full_url)
-            return  new_urls
+        return  new_urls
 
     def _get_new_data(self,url, soup):
         res_data ={}

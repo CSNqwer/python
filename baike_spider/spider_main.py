@@ -27,9 +27,10 @@ class Spidermain(object):
 
 
         self.outputer.output_html()
-
+csnmon
 
 if __name__=="__main__":
-    root_url = "http://baike.baidu.com/item/Python"
+    root_url = "http://baike.baidu.com/item/%E6%BD%98%E6%85%A7%E5%A6%82"
     obj_spider = Spidermain()
     obj_spider.craw(root_url)
+    1
